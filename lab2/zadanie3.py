@@ -1,7 +1,6 @@
 # https://www.programiz.com/dsa/red-black-tree
 # Implementing Red-Black Tree in Python
 import sys
-from zadanie1 import lista20
 import os
 os.system("")
 
@@ -355,15 +354,16 @@ def chooseOption(tree, number):
 
 
 if __name__ == "__main__":
-
     rbt = RedBlackTree()
 
     # VISUALISATION print lista20
+    lista20 = [7172, 1208, 860, 7188, 905, 6937, 1604, 7499, 9969, 5803, 7814, 6581, 3861, 4266, 3210, 873, 5565, 9958, 9863, 8740]
     for number in lista20:
         rbt.insert(number)
     print("\033[1;32;40m ------------- YOUR RED BLACK TREE ------------- \033[0m")
     rbt.print_tree()
     print("\n")
+    
     # INTERACTION with the user
     print("\033[1;32;40m What would you like to do?\n Choose:\n 1 - to INSERT node\n 2 - to DELETE node\n 3 - to SEARCH node\n \033[0m")
     num = int(input("\033[1;32;40m Enter your number here: \033[0m"))
